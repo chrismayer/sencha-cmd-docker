@@ -27,7 +27,7 @@ ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 RUN mkdir /src
 WORKDIR /src
 ENV PATH="/opt/Sencha:$PATH"
-# FIX for phnatomjs
+# FIX for phantomjs
 # https://github.com/ioBroker/ioBroker.phantomjs/issues/19#issuecomment-729653302
 ENV OPENSSL_CONF=/etc/ssl/
 CMD sencha app watch
